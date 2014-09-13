@@ -1,1 +1,18 @@
-dummy data
+Example URL (searching tips):
+https://api.foursquare.com/v2/tips/search?client_id=M0YRKMN0LZDXUGFVKELRRPZEAYJNEMAMPIOLSB32VEEE32O4&client_secret=NAYLI0SLQBSVPOECHXVCHD45FB4SB3JCSVIXANK3E4Q0EEPV&v=20130815&ll=40.7,-74&query=pizza
+
+Foursquare API Info: 
+Client id:
+M0YRKMN0LZDXUGFVKELRRPZEAYJNEMAMPIOLSB32VEEE32O4
+Client secret:
+NAYLI0SLQBSVPOECHXVCHD45FB4SB3JCSVIXANK3E4Q0EEPV
+
+1. Capital One 360 cafe
+ll = 40.761132, -73.967313
+
+2. St. Marks Place
+ll = 40.728637, -73.987680
+
+3. Meatpacking District
+ll = 40.740468, -74.006363
+
