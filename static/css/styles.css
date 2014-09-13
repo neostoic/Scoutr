@@ -121,6 +121,9 @@ hr {
     color: white;
 }
 
+
+
+
 .logo {
   display:block;
   padding:3px;
@@ -298,4 +301,11 @@ small.text-muted {
   #sidebar, #sidebar a, #sidebar-footer a {
     padding-left:3px;
   }
+}
+
+.modal-header, .modal-footer {
+background-color: #BF63E8;
+font-weight: 800;
+font-size: 12px;
+color: white;
 }
