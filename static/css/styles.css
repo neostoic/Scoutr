@@ -143,13 +143,21 @@ hr {
   position:absolute;
   bottom:5px;
   padding:5px;
-  color: white
+  color: white;
 }
 #footer {
   margin-bottom:20px;
 }
 
 /* bootstrap overrides */
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+   background-color:#FFF9E1;
+   color:black;
+   border:  .1em solid black;
+}
+
+
 
 h1,h2,h3 {
    font-weight:800;
@@ -212,6 +220,9 @@ h1,h2,h3 {
 .col-sm-9.full {
     width: 100%;
 }
+
+
+
 
 .modal-header, .modal-footer {
 	background-color:#f2f2f2;
