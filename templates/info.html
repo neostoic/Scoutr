@@ -1,5 +1,55 @@
 {% extends 'base.html' %}
 {% block title %}Scoutr{% endblock %}
 {% block content %}
-  <p>Put form for entering info here!!!</p>
+	<div class="row">
+  
+     <div class="col-md-12">
+         <span style="margin-left:15px;margin-bottom:5px"> </span>
+	 
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-md-12 col-md-12 column">
+					<form action="" method="POST"  role="form" id="info-form">
+
+						<div class="row ">
+							<div class="col-md-4 col-sm-4 column">
+								<div class="form-group" style="margin-bottom:5px" ><input type="text" class="form-control" name="vendor" placeholder="Your Store's Zipcode" /></div>
+							</div>
+
+							<div class="col-md-8 col-sm-8 column"></div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-8 col-sm-8 column">
+								<div class="form-group" style="margin-bottom:5px"><input type="text" class="form-control" name="name" placeholder="What items are you scouting for" /></div>
+							</div>
+							<div class="col-md-4 col-sm-4 column"></div>
+							
+						</div>
+
+						<div class="row" style="margin-top:30px" >
+							<div class="col-md-3 col-sm-3 column">
+								
+							</div>
+							<div class="col-md-4 col-sm-4 column">
+								
+								 <button type="submit"  style="background-color:#BF63E8; color: white;" class="">Scoutr</button> 
+							</div>
+							<div class="col-md-4 col-sm-4 column"></div>
+							
+						</div>
+
+
+						 
+					</form>
+				</div>
+			</div>
+		</div>	
+	</div>	
+</div>	
+		
+
+
+
+  
 {% endblock %}
