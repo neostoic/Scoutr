@@ -1,8 +1,5 @@
 import os
 from flask import Flask, render_template
-from flask.ext.mongoengine import MongoEngine
-# from models import MenuItem, Location
-from mongokit import Connection, Document
 
 app = Flask(__name__)
 
@@ -15,8 +12,6 @@ app.config["MONGODB_SETTINGS"] = {
    'password': 'ScoutRPass4'}
 
 app.config["SECRET_KEY"] = '\xc8\x1e9\xec\xe1\x01\x87\x9d\xba\x88Zm\x11s\x10\xff\xc4M\xefH\xbd\x02\xf9\xc5'
-
-db = MongoEngine(app)
 
 @app.route('/')
 def hello(name=None):
