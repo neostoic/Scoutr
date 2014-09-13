@@ -59,7 +59,8 @@ hr {
     position: absolute;
     right: 0;
     top: 0;
-    background-color:#444444;
+    background-color:#FFF9E1;
+    color: black;
   /*
     background-image:url('/assets/example/bg_suburb.jpg');
     background-size:cover;
@@ -73,7 +74,7 @@ hr {
 
 .navbar-blue {
     border-width:0;
-	background-color:#3B5999;
+	  background-color:#BF63E8;
     color:#ffffff;
     font-family:arial,sans-serif;
     top:0;
@@ -89,12 +90,12 @@ hr {
 .navbar-blue .dropdown-menu li > a {padding-left:30px;}
 
 .navbar-blue li>a:hover, .navbar-blue li>a:focus, .navbar-blue .open, .navbar-blue .open>a, .navbar-blue .open>a:hover, .navbar-blue .open>a:focus {
-   background-color:#2A4888;
-   color:#fff;
+   background-color:#FFF9E1;
+   color:black;
 }
 
 #main {
-   background-color:#e9eaed;
+   background-color:#fffbf6;
    padding-left:0;
    padding-right:0;
 }
@@ -110,20 +111,21 @@ hr {
 }
 
 #sidebar, #sidebar a, #sidebar-footer a {
-    color:#ffffff;
+    /*color:#ffffff;*/
     background-color:transparent;
-	text-shadow:0 0 2px #000000;
+	/*text-shadow:0 0 2px #000000;*/
     padding-left:5px;
 }
 #sidebar .nav li>a:hover {
-    background-color:#393939;
+    background-color:#BF63E8;
+    color: white;
 }
 
 .logo {
   display:block;
   padding:3px;
   background-color:#fff;
-  color:#3B5999;
+  color:#BF63E8;
   height:28px;
   width:28px;
   margin:9px;
@@ -133,7 +135,7 @@ hr {
   font-weight:700;
   text-align:center;
   text-decoration:none;
-  text-shadow:0 0 1px;
+  /*text-shadow:0 0 1px;*/
   border-radius:2px;
 }
 #sidebar-footer {
@@ -141,12 +143,21 @@ hr {
   position:absolute;
   bottom:5px;
   padding:5px;
+  color: white;
 }
 #footer {
   margin-bottom:20px;
 }
 
 /* bootstrap overrides */
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+   background-color:#FFF9E1;
+   color:black;
+   border:  .1em solid black;
+}
+
+
 
 h1,h2,h3 {
    font-weight:800;
@@ -161,12 +172,12 @@ h1,h2,h3 {
 }
 
 .btn-primary,.label-primary,.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus  {
-	background-color:#3B5999;
+	background-color:#BF63E8;
     color:#fffffe;
 }
 .btn-default {
     color:#666666;
-    text-shadow:0 0 1px rgba(0,0,0,.3);
+    /*text-shadow:0 0 1px rgba(0,0,0,.3);*/
 }
 .form-control {
 	
@@ -178,12 +189,12 @@ h1,h2,h3 {
 }
   
 .badge{
-   color:#3B5999;
+   color:#BF63E8;
    background-color:#fff;
 }
 .badge:hover, .badge-inverse{
-   background-color:#3B5999;
-   color:#fff;
+   background-color:#BF63E8;
+   color:white;
 }
     
 .jumbotron {
@@ -209,6 +220,9 @@ h1,h2,h3 {
 .col-sm-9.full {
     width: 100%;
 }
+
+
+
 
 .modal-header, .modal-footer {
 	background-color:#f2f2f2;
@@ -248,7 +262,7 @@ small.text-muted {
   }
 
   .navbar-blue {
-	background-color:#3B5999;
+	background-color:#BF63E8;
     top:0;
     width:100%;
     position:relative;
