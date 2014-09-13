@@ -1,6 +1,9 @@
 Example URL (searching tips):
 https://api.foursquare.com/v2/tips/search?client_id=M0YRKMN0LZDXUGFVKELRRPZEAYJNEMAMPIOLSB32VEEE32O4&client_secret=NAYLI0SLQBSVPOECHXVCHD45FB4SB3JCSVIXANK3E4Q0EEPV&v=20130815&ll=40.7,-74&query=pizza
 
+Explore area for Coffee:
+https://developer.foursquare.com/docs/venues/explore?client_id=M0YRKMN0LZDXUGFVKELRRPZEAYJNEMAMPIOLSB32VEEE32O4&client_secret=NAYLI0SLQBSVPOECHXVCHD45FB4SB3JCSVIXANK3E4Q0EEPV&ll=40.7,-74&query=coffee
+
 Foursquare API Info: 
 Client id:
 M0YRKMN0LZDXUGFVKELRRPZEAYJNEMAMPIOLSB32VEEE32O4
