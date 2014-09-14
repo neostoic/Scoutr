@@ -54,4 +54,4 @@ target/
 *.sqlite3
 
 # Stupid Macs
-.DS_Store
+*.DS_Store
