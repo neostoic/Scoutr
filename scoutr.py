@@ -1,4 +1,5 @@
 import os
+import oauth2 as oauth
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -14,7 +15,11 @@ app.config["MONGODB_SETTINGS"] = {
 app.config["SECRET_KEY"] = '\xc8\x1e9\xec\xe1\x01\x87\x9d\xba\x88Zm\x11s\x10\xff\xc4M\xefH\xbd\x02\xf9\xc5'
 
 @app.route('/')
-def hello(name=None):
+def welcome():
+  return render_template('splash.html')
+
+@app.route('/dashboard/')
+def dashboard(name=None):
     return render_template('index.html', name=name)
 
 @app.route('/info/')
