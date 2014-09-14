@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<title>Venue/Products</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/products.css">
+<h1>Products and Venues</h1>
+
+<div id="productBlock">
+  <div class="venue">
+    <button class="btn btn-default exp-contr"><i class="glyphicon glyphicon-chevron-down"></i></button>
+    <div class="venue_name">Starbucks Cafe</div>
+    <div class="venue_address">Address</div>
+    <div class="venue_phno">(212) 555-1234</div>
+    <div class="venue_prods">
+      <div class="product_head">Products</div>
+      <ul>
+        <li><span class="prod_name">Chocolate Chip Cookies</span> <span class="prod_price">($3.53)</span>
+        <li><span class="prod_name">Ice Cream</span>
+        <li><span class="prod_name">Pancakes</span>
+      </ul>
+    </div>    
+  </div>
+
+  <div class="venue">
+    <button class="btn btn-default exp-contr"><i class="glyphicon glyphicon-chevron-down"></i></button>
+    <div class="venue_name">Other Cafe</div>
+    <div class="venue_address">Addresss 2</div>
+    <div class="venue_phno">(212) 555-1237</div>
+    <div class="venue_prods">
+      <div class="product_head">Products</div>
+      <ul>
+        <li><span class="prod_name">Hot dog</span>
+        <li><span class="prod_name">Seollongtang</span>
+        <li><span class="prod_name">Army Stew</span>
+      </ul>
+    </div>    
+  </div>
+</div>
+
+<script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+<script>
+$('.exp-contr').click(function(){
+  var icon = $(this).children('i');
+  if (icon.hasClass('glyphicon-chevron-down')) {
+    $(this).siblings('.venue_prods').slideDown();
+  } else {
+    $(this).siblings('.venue_prods').slideUp();
+  }
+  icon.toggleClass('glyphicon-chevron-down');
+  icon.toggleClass('glyphicon-chevron-up');
+
+});
+</script>

@@ -1,5 +1,12 @@
-{% extends 'base_inner.html' %}
+{% extends 'base.html' %}
 {% block title %}Scoutr{% endblock %}
 {% block content %}
+{% include 'inner_top.html' %}
+  <div class="padding">
+      <div class="full col-sm-9">
+        
+          <!-- content -->
+          <div class="row">
   <p>Put form for entering info here!!!</p>
+  {% include 'inner_bot.html' %}
 {% endblock %}

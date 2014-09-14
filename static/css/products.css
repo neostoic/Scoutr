@@ -1,0 +1,49 @@
+#productBlock {
+			
+}
+
+#productBlock .venue {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	background-color: #fff;
+	padding: 5px 10px;
+	margin: 10px 0;
+}
+
+#productBlock .venue button {
+	float: right;
+}
+
+#productBlock .venue .venue_name {
+	font-weight: bold;
+}
+
+#productBlock .venue_prods {
+	display: none;
+	/* background-color: #ffd;*/
+	margin: 10px 20px;
+
+}
+
+#productBlock .venue_prods ul {
+	list-style-type: none;
+	list-style-position: inside;
+	margin-left: -20px;
+}
+
+#productBlock .venue_prods ul li {
+	margin-left: 0px;
+}
+
+#productBlock .venue_prods .prod_name {
+	font-weight: bold;
+}
+
+#productBlock .venue_prods .prod_price {
+
+}
+
+#productBlock .venue_prods .product_head {
+	font-weight: bold;
+	text-decoration: underline;
+}
