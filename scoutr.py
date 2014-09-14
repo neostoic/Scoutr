@@ -1,5 +1,4 @@
 import os
-import oauth2 as oauth
 from flask import Flask, render_template
 
 app = Flask(__name__)
