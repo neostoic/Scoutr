@@ -9,6 +9,7 @@ $().ready(function() {
 		loadVenues(zipcode);
 	});
 	loadVenues('10002');
+	$('#venue-details .venue_prods ul').empty();
 });
 
 function loadVenues(zipcode){
