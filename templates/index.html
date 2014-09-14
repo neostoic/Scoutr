@@ -11,8 +11,8 @@
  <div class="col-sm-4">
    <form class="form">
       <div class="input-group text-center">
-        <input type="text" class="form-control input-lg" placeholder="New Zip Code">
-          <span class="input-group-btn"><button class="btn btn-lg btn-primary" type="button">OK</button></span>
+        <input type="text" class="form-control input-lg" placeholder="New Zip Code" id="inpzip">
+          <span class="input-group-btn"><button class="btn btn-lg btn-primary" type="button" id="gosearch">OK</button></span>
       </div>
     </form>
   </div>
@@ -233,5 +233,9 @@
   });
 
 
+</script>
+<script src="{{url_for('static', filename='js/loc_switch.js')}}"></script>
+<script>
+  
 </script>
 {% endblock %}
