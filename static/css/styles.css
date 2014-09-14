@@ -74,7 +74,7 @@ hr {
 
 .navbar-blue {
     border-width:0;
-	  background-color:#BF63E8;
+	  background-color:#4e387e;
     color:#ffffff;
     font-family:arial,sans-serif;
     top:0;
@@ -117,7 +117,7 @@ hr {
     padding-left:5px;
 }
 #sidebar .nav li>a:hover {
-    background-color:#BF63E8;
+    background-color:#4e387e;
     color: white;
 }
 
@@ -128,7 +128,7 @@ hr {
   display:block;
   padding:3px;
   background-color:#fff;
-  color:#BF63E8;
+  color:#4e387e;
   height:28px;
   width:28px;
   margin:9px;
@@ -175,7 +175,7 @@ h1,h2,h3 {
 }
 
 .btn-primary,.label-primary,.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus  {
-	background-color:#BF63E8;
+	background-color:#4e387e;
     color:#fffffe;
 }
 .btn-default {
@@ -192,11 +192,11 @@ h1,h2,h3 {
 }
   
 .badge{
-   color:#BF63E8;
+   color:#4e387e;
    background-color:#fff;
 }
 .badge:hover, .badge-inverse{
-   background-color:#BF63E8;
+   background-color:#4e387e;
    color:white;
 }
     
@@ -265,7 +265,7 @@ small.text-muted {
   }
 
   .navbar-blue {
-	background-color:#BF63E8;
+	background-color:#4e387e;
     top:0;
     width:100%;
     position:relative;
@@ -304,7 +304,7 @@ small.text-muted {
 }
 
 .modal-header, .modal-footer {
-background-color: #BF63E8;
+background-color: #4e387e;
 font-weight: 800;
 font-size: 12px;
 color: white;
@@ -312,7 +312,7 @@ color: white;
 
 textarea:focus, input[type="text"]:focus,   input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {   
   border-color: rgba(159,2,0,.95);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 2px #BF63E8;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 2px #4e387e;
   outline: 0 none;}
 
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {

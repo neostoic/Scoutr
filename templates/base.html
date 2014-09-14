@@ -11,7 +11,11 @@
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
     <link href="{{url_for('static', filename='css/styles.css')}}" rel="stylesheet">
-		<link href="{{url_for('static', filename='css/products.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/products.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/demo.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/easyui.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/icon.css')}}" rel="stylesheet">
+		<link href="{{url_for('static', filename='css/cart.css')}}" rel="stylesheet">
     {% block head %}
     {% endblock %}
 	</head>
@@ -122,9 +126,18 @@
   </div>
   </div>
   </form> 
+
+
+
+
+
+
+
+
 </div>
 	<!-- script references -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+
+    <script src="{{ url_for('static', filename='js/jquery-2.1.1.min.js') }}"></script>
 		<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/jquery.easyui.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/lodash_underscore.js') }}"></script>
