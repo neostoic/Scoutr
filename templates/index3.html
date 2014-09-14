@@ -1,0 +1,370 @@
+{% extends 'base.html' %}
+{% block title %}Scoutr{% endblock %}
+{% block maincontent %}
+{% include 'inner_top.html' %}
+<!-- main col left --> 
+  <!-- <title>Venue/Products</title> -->
+<div class="row" style="margin-bottom:20px"> 
+ <div class="col-sm-8">
+   <h2>Products and Venues</h2>  
+ </div>
+ <div class="col-sm-4">
+   <form class="form" id="zipform">
+      <div class="input-group text-center">
+        <input type="text" class="form-control input-lg" placeholder="New Zip Code" id="inpzip">
+          <span class="input-group-btn"><button class="btn btn-lg btn-primary" type="button" id="gosearch">OK</button></span>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+                         <div class="col-sm-6">
+                           
+                              <div class="panel panel-default">
+                              
+                        
+                                <div id="productBlock">
+                                  <div class="venue">
+                                    <button class="btn btn-default exp-contr"><i class="glyphicon glyphicon-chevron-down"></i></button>
+                                    <div class="venue_name">Starbucks Cafe</div>
+                                    <div class="venue_address">Address</div>
+                                    <div class="venue_phno">(212) 555-1234</div>
+                                    <div class="venue_prods">
+                                      <div class="product_head">Products</div>
+                                      <ul>
+                                        <li><span class="prod_name">Chocolate Chip Cookies</span> <span class="prod_price">($3.53)</span>
+                                        <li><span class="prod_name">Ice Cream</span>
+                                        <li><span class="prod_name">Pancakes</span>
+                                      </ul>
+                                    </div>    
+                                  </div>
+
+                                  <div class="venue">
+                                    <button class="btn btn-default exp-contr"><i class="glyphicon glyphicon-chevron-down"></i></button>
+                                    <div class="venue_name">Other Cafe</div>
+                                    <div class="venue_address">Addresss 2</div>
+                                    <div class="venue_phno">(212) 555-1237</div>
+                                    <div class="venue_prods">
+                                      <div class="product_head">Products</div>
+                                      <ul>
+                                        <li><span class="prod_name">Hot dog</span>
+                                        <li><span class="prod_name">Seollongtang</span>
+                                        <li><span class="prod_name">Army Stew</span>
+                                      </ul>
+                                    </div>    
+                                  </div>
+                                </div>
+                              </div>
+
+                           
+                  
+                              <div class="well"> 
+                                   <form class="form-horizontal" role="form">
+                                    <h4>Scoutr, I need help with:</h4>
+                                     <div class="form-group" style="padding:14px;">
+                                      <textarea class="form-control" placeholder="Enter topic you need help with"></textarea>
+                                    </div>
+                                    <button class="btn btn-primary pull-right" type="button">Ask For Help!</button><ul class="list-inline"><li><a href=""></a><li><a href=""><i class="glyphicon glyphicon-map-marker"></i></a></li></ul>
+                                  </form>
+                              </div>
+                           
+                             
+                           		
+                           
+                          </div>
+                          
+                          <!-- main col right -->
+                          <div class="col-sm-6">
+                              
+                               <div class="panel panel-default">
+                                 <div class="panel-heading"><!-- <a href="#" class="pull-right">View all</a> --> <h4>Bootply Editor &amp; Code Library</h4></div>
+                                  <div class="panel-body">
+                                    <!-- <p><img src="//placehold.it/150x150" class="img-circle pull-right"> <a href="#">The Bootstrap Playground</a></p> -->
+                                    <div class="clearfix"></div>
+                                    <hr>
+                                    Design, build, test, and prototype using Bootstrap in real-time from your Web browser. Bootply combines the power of hand-coded HTML, CSS and JavaScript with the benefits of responsive design using Bootstrap. Find and showcase Bootstrap-ready snippets in the 100% free Bootply.com code repository.
+                                  </div>
+                               </div>
+                            
+                               <div class="panel panel-default" style="margin-top:30px">
+                                 <div class="panel-heading"><a href="#" class="pull-right"></a> 
+                                 <h4>Build Your Menu</h4>
+                                 </div>
+                                  <div class="panel-body">
+                                  <div class="cart" >
+                                           
+                                            <div>
+                                            <table id="cartcontent" fitColumns="true" style="width:340px;height:auto;">
+                                              <thead>
+                                                <tr>
+                                                  <th field="name" width=140  >Name</th>
+                                                  <th field="quantity" width=85 align="right">Quantity</th>
+                                                  <th field="price" width=65  align="right">Price</th>
+                                                </tr>
+                                              </thead>
+                                            </table>
+                                            </div>
+                                            <p class="total">Total: $0</p>
+                                            <!--h2>Drop here to add to cart</h2-->
+                                          </div>
+                                  </div>
+                               </div>
+   
+                          </div>
+                                   </div><!--/row-->
+       
+
+
+
+<!-- </head> -->
+<!-- <body style="margin:0;padding:0;height:100%;background:#fafafa;"> -->
+  <ul class="products">
+    <li>
+      <a href="#" class="item">
+        <img src="images/shirt1.gif"/>
+        <div>
+          <p>Balloon</p>
+          <p>Price:$25</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="item">
+        <img src="images/shirt2.gif"/>
+        <div>
+          <p>Feeling</p>
+          <p>Price:$25</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="item">
+        <img src="images/shirt3.gif"/>
+        <div>
+          <p>Elephant</p>
+          <p>Price:$25</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="item">
+        <img src="images/shirt4.gif"/>
+        <div>
+          <p>Stamps</p>
+          <p>Price:$25</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="item">
+        <img src="images/shirt5.gif"/>
+        <div>
+          <p>Monogram</p>
+          <p>Price:$25</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="item">
+        <img src="images/shirt6.gif"/>
+        <div>
+          <p>Rolling</p>
+          <p>Price:$25</p>
+        </div>
+      </a>
+    </li>
+  </ul>
+  
+
+
+
+
+
+
+
+                            
+                         
+        <!-- <title>Venue/Products</title> -->
+  <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+  <!-- <link href="css/styles.css" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="css/products.css"> -->
+<!-- <h1>Products and Venues</h1>
+
+<div id="productBlock">
+  <div class="venue">
+    <button class="btn btn-default exp-contr"><i class="glyphicon glyphicon-chevron-down"></i></button>
+    <div class="venue_name">Starbucks Cafe</div>
+    <div class="venue_address">Address</div>
+    <div class="venue_phno">(212) 555-1234</div>
+    <div class="venue_prods">
+      <div class="product_head">Products</div>
+      <ul>
+        <li><span class="prod_name">Chocolate Chip Cookies</span> <span class="prod_price">($3.53)</span>
+        <li><span class="prod_name">Ice Cream</span>
+        <li><span class="prod_name">Pancakes</span>
+      </ul>
+    </div>    
+  </div>
+
+  <div class="venue">
+    <button class="btn btn-default exp-contr"><i class="glyphicon glyphicon-chevron-down"></i></button>
+    <div class="venue_name">Other Cafe</div>
+    <div class="venue_address">Addresss 2</div>
+    <div class="venue_phno">(212) 555-1237</div>
+    <div class="venue_prods">
+      <div class="product_head">Products</div>
+      <ul>
+        <li><span class="prod_name">Hot dog</span>
+        <li><span class="prod_name">Seollongtang</span>
+        <li><span class="prod_name">Army Stew</span>
+      </ul>
+    </div>    
+  </div>
+</div> -->
+
+
+
+
+        {% include 'inner_bot.html' %}
+
+{% endblock %}
+
+{% block scripts %}
+
+<script src="{{url_for('static', filename='raw_data.js')}}"></script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+        $('.exp-contr').click(function(){
+          var icon = $(this).children('i');
+          if (icon.hasClass('glyphicon-chevron-down')) {
+            $(this).siblings('.venue_prods').slideDown();
+          } else {
+            $(this).siblings('.venue_prods').slideUp();
+          }
+          icon.toggleClass('glyphicon-chevron-down');
+          icon.toggleClass('glyphicon-chevron-up');
+        });
+  });
+
+
+</script>
+<script src="{{url_for('static', filename='js/data_mgr.js')}}"></script>
+<script src="{{url_for('static', filename='js/loc_switch.js')}}"></script>
+<script>
+  
+</script>
+
+<style type="text/css">
+    .products{
+      list-style:none;
+      margin-right:300px;
+      padding:0px;
+      height:100%;
+    }
+    .products li{
+      display:inline;
+      float:left;
+      margin:10px;
+    }
+    .item{
+      display:block;
+      text-decoration:none;
+    }
+    .item img{
+      border:1px solid #333;
+    }
+    .item p{
+      margin:0;
+      font-weight:bold;
+      text-align:center;
+      color:#c3c3c3;
+    }
+    .cart{
+      position:fixed;
+      /*right:0;*/
+      /*top:0;*/
+      /*width:300px;*/
+      /*height:100%;*/
+      /*background:#ccc;*/
+      /*padding:0px 10px;*/
+    }
+    h1{
+      text-align:center;
+      color:#555;
+    }
+    h2{
+      position:absolute;
+      font-size:16px;
+      left:10px;
+      bottom:20px;
+      color:#555;
+    }
+    .total{
+      margin:0;
+      text-align:right;
+      padding-right:20px;
+    }
+  </style>
+  <script>
+    var data = {"total":0,"rows":[]};
+    var totalCost = 0;
+    
+    $(function(){
+      $('#cartcontent').datagrid({
+        singleSelect:true
+      });
+      $('.item').draggable({
+        revert:true,
+        proxy:'clone',
+        onStartDrag:function(){
+          $(this).draggable('options').cursor = 'not-allowed';
+          $(this).draggable('proxy').css('z-index',10);
+        },
+        onStopDrag:function(){
+          $(this).draggable('options').cursor='move';
+        }
+      });
+      $('.cart').droppable({
+        onDragEnter:function(e,source){
+          $(source).draggable('options').cursor='auto';
+        },
+        onDragLeave:function(e,source){
+          $(source).draggable('options').cursor='not-allowed';
+        },
+        onDrop:function(e,source){
+          var name = $(source).find('p:eq(0)').html();
+          var price = $(source).find('p:eq(1)').html();
+          addProduct(name, parseFloat(price.split('$')[1]));
+        }
+      });
+    });
+    
+    function addProduct(name,price){
+      function add(){
+        for(var i=0; i<data.total; i++){
+          var row = data.rows[i];
+          if (row.name == name){
+            row.quantity += 1;
+            return;
+          }
+        }
+        data.total += 1;
+        data.rows.push({
+          name:name,
+          quantity:1,
+          price:price
+        });
+      }
+      add();
+      totalCost += price;
+      $('#cartcontent').datagrid('loadData', data);
+      $('div.cart .total').html('Total: $'+totalCost);
+    }
+  </script>
+
+
+
+
+{% endblock %}
