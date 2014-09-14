@@ -1,0 +1,359 @@
+{
+    "meta": {
+        "code": 200
+    },
+    "response": {
+        "menu": {
+            "provider": {
+                "name": "singleplatform",
+                "attributionImage": "https://as.singleplatform.com/Foursquare/barbuto/provided_by.png",
+                "attributionLink": "http://w.singlepage.com/barbuto/menu?ref=Foursquare",
+                "attributionText": "Disclaimer: Always check with the business for pricing and availability of menu items. SinglePlatform is not responsible for menu or pricing changes, but the information is believed to be accurate when posted. Listing of a menu does not mean that there is any affiliation, endorsement or sponsorship between SinglePlatform and the listed business."
+            },
+            "menus": {
+                "count": 1,
+                "items": [
+                    {
+                        "menuId": "mp1n4nv73n409ek5h0hqvhexv",
+                        "name": "Dinner Menu",
+                        "description": "",
+                        "entries": {
+                            "count": 6,
+                            "items": [
+                                {
+                                    "sectionId": "s122755",
+                                    "name": "Antipasti",
+                                    "entries": {
+                                        "count": 7,
+                                        "items": [
+                                            {
+                                                "entryId": "826670",
+                                                "name": "Bruschetta",
+                                                "description": "Gorgonzola dolce & spiced walnuts",
+                                                "prices": [
+                                                    "11.00"
+                                                ],
+                                                "price": "11.00",
+                                                "options": [],
+                                                "additions": []
+                                            },
+                                            {
+                                                "entryId": "826672",
+                                                "name": "Insalata Stagionale",
+                                                "description": "Warm farro, root vegetables & chicory",
+                                                "prices": [
+                                                    "12.00"
+                                                ],
+                                                "price": "12.00",
+                                                "options": [],
+                                                "additions": []
+                                            },
+                                            {
+                                                "entryId": "26093639",
+                                                "name": "Cavolini Crudi",
+                                                "description": "Shaved brussels sprouts, almonds & pecorino",
+                                                "prices": [
+                                                    "14.00"
+                                                ],
+                                                "price": "14.00",
+                                                "options": [],
+                                                "additions": []
+                                            },
+                                            {
+                                                "entryId": "28139372",
+                                                "name": "Insalata Puntarelle",
+                                                "description": "Local puntarelle, anchovy & fried egg",
+                                                "prices": [
+                                                    "12.00"
+                                                ],
+                                                "price": "12.00",
+                                                "options": [],
+                                                "additions": []
+                                            },
+                                            {
+                                                "entryId": "26093640",
+                                                "name": "Calamari a La Plancha",
+                                                "description": "Calamari, olives, potatoes & chilies",
+                                                "prices": [
+                                                    "14.00"
+                                                ],
+                                                "price": "14.00",
+                                                "options": [],
+                                                "additions": []
+                                            },
+                                            {
+                                                "entryId": "826673",
+                                                "name": "Zuppa",
+                                                "description": "Butternut squash soup & creme fraiche",
+                                                "prices": [
+                                                    "10.00"
+                                                ],
+                                                "price": "10.00",
+                                                "options": [],
+                                                "additions": []
+                                            },
+                                            {
+                                                "entryId": "826671",
+                                                "name": "Crudo",
+                                                "description": "Wild striped bass, citrus & chilies",
+                                                "prices": [
+                                                    "13.00"
+                                                ],
+                                                "price": "13.00",
+                                                "options": [],
+                                                "additions": []
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "sectionId": "s3893706",
+                                    "name": "Main",
+                                    "entries": {
+                                        "count": 2,
+                                        "items": [
+                                            {
+                                                "entryId": "28139374",
+                                                "name": "Jonathan Waxman Cookbooks",
+                                                "description": "A great american cook",
+                                                "prices": [
+                                                    "35.00"
+                                                ],
+                                                "price": "35.00",
+                                                "options": [],
+                                                "additions": []
+                                            },
+                                            {
+                                                "entryId": "28139375",
+                                                "name": "Salumi",
+                                                "description": "Prosciutto di parma, soppressata & cacciatorini",
+                                                "prices": [
+                                                    "19.00"
+                                                ],
+                                                "price": "19.00",
+                                                "options": [],
+                                                "additions": []
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "sectionId": "s122756",
+                                    "name": "Primi",
+                                    "entries": {
+                                        "count": 4,
+                                        "items": [
+                                            {
+                                                "entryId": "826675",
+                                                "name": "Rigatoni E Cavolfiore",
+                                                "description": "Cauliflower, cream & chilies",
+                                                "prices": [
+                                                    "19.00"
+                                                ],
+                                                "price": "19.00",
+                                                "options": [],
+                                                "additions": []
+                                            },
+                                            {
+                                                "entryId": "826676",
+                                                "name": "Tagliatelle Con Maiale",
+                                                "description": "House-made pasta & braised pork ragu",
+                                                "prices": [
+                                                    "21.00"
+                                                ],
+                                                "price": "21.00",
+                                                "options": [],
+                                                "additions": []
+                                            },
+                                            {
+                                                "entryId": "826677",
+                                                "name": "Gnocchi Con Zucca",
+                                                "description": "Delicata squash, sage & pumpkin seeds",
+                                                "prices": [
+                                                    "19.00"
+                                                ],
+                                                "price": "19.00",
+                                                "options": [],
+                                                "additions": []
+                                            },
+                                            {
+                                                "entryId": "28139373",
+                                                "name": "Risotto E Speck",
+                                                "description": "Speck, treviso& parmesan",
+                                                "prices": [
+                                                    "20.00"
+                                                ],
+                                                "price": "20.00",
+                                                "options": [],
+                                                "additions": []
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "sectionId": "s122757",
+                                    "name": "Piatti Unici",
+                                    "entries": {
+                                        "count": 6,
+                                        "items": [
+                                            {
+                                                "entryId": "826678",
+                                                "name": "Pollo Al Forno",
+                                                "description": "Jw chicken & salsa verde",
+                                                "prices": [
+                                                    "19.00"
+                                                ],
+                                                "price": "19.00",
+                                                "options": [],
+                                                "additions": []
+                                            },
+                                            {
+                                                "entryId": "826679",
+                                                "name": "Braciola Di Maiale",
+                                                "description": "Pork chop & braised spigarello",
+                                                "prices": [
+                                                    "25.00"
+                                                ],
+                                                "price": "25.00",
+                                                "options": [],
+                                                "additions": []
+                                            },
+                                            {
+                                                "entryId": "826680",
+                                                "name": "Manzo Ai Ferri",
+                                                "description": "Prime skirt steak, romesco& scallions",
+                                                "prices": [
+                                                    "26.00"
+                                                ],
+                                                "price": "26.00",
+                                                "options": [],
+                                                "additions": []
+                                            },
+                                            {
+                                                "entryId": "826681",
+                                                "name": "Coda Di Rospo",
+                                                "description": "Monkfish & gigante beans",
+                                                "prices": [
+                                                    "24.00"
+                                                ],
+                                                "price": "24.00",
+                                                "options": [],
+                                                "additions": []
+                                            },
+                                            {
+                                                "entryId": "826682",
+                                                "name": "Spigola",
+                                                "description": "Wild striped bass, mushrooms & leeks",
+                                                "prices": [
+                                                    "25.00"
+                                                ],
+                                                "price": "25.00",
+                                                "options": [],
+                                                "additions": []
+                                            },
+                                            {
+                                                "entryId": "826683",
+                                                "name": "Costine Di Agnello",
+                                                "description": "Lamb ribs, cranberries & chilies",
+                                                "prices": [
+                                                    "29.00"
+                                                ],
+                                                "price": "29.00",
+                                                "options": [],
+                                                "additions": []
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "sectionId": "s122758",
+                                    "name": "Contorni",
+                                    "entries": {
+                                        "count": 3,
+                                        "items": [
+                                            {
+                                                "entryId": "826684",
+                                                "name": "Cavolini",
+                                                "description": "Brussels sprouts, hazelnuts & lemon",
+                                                "prices": [
+                                                    "8.00"
+                                                ],
+                                                "price": "8.00",
+                                                "options": [],
+                                                "additions": []
+                                            },
+                                            {
+                                                "entryId": "826685",
+                                                "name": "Carate Arroste",
+                                                "description": "Local baby carrots& herbs",
+                                                "prices": [
+                                                    "8.00"
+                                                ],
+                                                "price": "8.00",
+                                                "options": [],
+                                                "additions": []
+                                            },
+                                            {
+                                                "entryId": "826686",
+                                                "name": "Patate",
+                                                "description": "Potatoes, pecorino & rosemary",
+                                                "prices": [
+                                                    "8.00"
+                                                ],
+                                                "price": "8.00",
+                                                "options": [],
+                                                "additions": []
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "sectionId": "s122759",
+                                    "name": "Formaggio",
+                                    "description": "selection of four cheeses for $20, selection of two cheeses for $10",
+                                    "entries": {
+                                        "count": 4,
+                                        "items": [
+                                            {
+                                                "entryId": "826687",
+                                                "name": "Vermont Creamery Coupole",
+                                                "description": "Pasteurized goat, vermont",
+                                                "prices": [],
+                                                "options": [],
+                                                "additions": []
+                                            },
+                                            {
+                                                "entryId": "826688",
+                                                "name": "Gorgonzola Mountain",
+                                                "description": "Pasteurized cow, lombardy",
+                                                "prices": [],
+                                                "options": [],
+                                                "additions": []
+                                            },
+                                            {
+                                                "entryId": "826689",
+                                                "name": "Toma Walser",
+                                                "description": "Pasteurized cow, piedmonte",
+                                                "prices": [],
+                                                "options": [],
+                                                "additions": []
+                                            },
+                                            {
+                                                "entryId": "826690",
+                                                "name": "Cabot Clothbound Cheddar",
+                                                "description": "Pasteurized cow, vermont",
+                                                "prices": [],
+                                                "options": [],
+                                                "additions": []
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
