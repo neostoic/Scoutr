@@ -9,7 +9,7 @@
    <h2>Products and Venues</h2>  
  </div>
  <div class="col-sm-4">
-   <form class="form">
+   <form class="form" id="zipform">
       <div class="input-group text-center">
         <input type="text" class="form-control input-lg" placeholder="New Zip Code" id="inpzip">
           <span class="input-group-btn"><button class="btn btn-lg btn-primary" type="button" id="gosearch">OK</button></span>
@@ -149,75 +149,7 @@
         <script src="{{url_for('static', filename='raw_data.js')}}"></script>
 
 <script type="text/javascript">
-   $(document).ready(function(){
-        var grp = [];
-
-        //Venues
-        Cap360Venues = []
-        MeatPackingVenues = []
-        StMarksVenues = []
-
-        //Menus
-        Cap360SerifinaMenu = []
-        Cap360PizzaMenu = []
-        Cap360FelidiaMenu = []
-
-        //Populate a bunch of menus
-         _.forEach(DATACap360SerafinaMenu.response.menu.menus.items[0].entries.items[0].entries.items.slice(0,5), function(data) {
-            var foodName  = data.name || "";
-            var price = data.price || "";
-            var description = data.description || "";
-            var menuInfo = [foodName, description, price];
-            Cap360SerifinaMenu.push(menuInfo);
-          });
-         _.forEach(DATACap360PizzaByCerTeMenu.response.menu.menus.items[0].entries.items[0].entries.items.slice(0,5), function(data) {
-            var foodName  = data.name || "";
-            var price = data.price || "";
-            var description = data.description || "";
-            var menuInfo = [foodName, description, price];
-            Cap360PizzaMenu.push(menuInfo);
-          });
-         _.forEach(DATACap360FelidiaMenu.response.menu.menus.items[0].entries.items[0].entries.items.slice(0,5), function(data) {
-            var foodName  = data.name || "";
-            var price = data.price || "";
-            var description = data.description || "";
-            var menuInfo = [foodName, description, price];
-            Cap360FelidiaMenu.push(menuInfo);
-          });
-
-         // Loop through Capital One 360 Venues
-        _.forEach(DATACap360.response.groups[0].items, function(data) {
-          var displayName  = data.venue.name || "";
-          var address = data.venue.location.address || "";
-          var lat = data.venue.location.lat || "";
-          var lng = data.venue.location.lng || "";
-          var phone = data.venue.contact.formattedPhone || "";
-          var venueInfo = [displayName, address, phone];
-          Cap360Venues.push(venueInfo);
-        });
-
-          // Loop through Meat Packing Venues
-        _.forEach(DATAMeatPacking.response.groups[0].items, function(data) {
-          var displayName  = data.venue.name || "";
-          var address = data.venue.location.address || "";
-          var lat = data.venue.location.lat || "";
-          var lng = data.venue.location.lng || "";
-          var phone = data.venue.contact.formattedPhone || "";
-          var venueInfo = [displayName, address, phone];
-          MeatPackingVenues.push(venueInfo);
-         });
-
-        // Loop through St Marks Venues
-        _.forEach(DATAStMarks.response.groups[0].items, function(data) {
-          var displayName  = data.venue.name || "";
-          var address = data.venue.location.address || "";
-          var lat = data.venue.location.lat || "";
-          var lng = data.venue.location.lng || "";
-          var phone = data.venue.contact.formattedPhone || "";
-          var venueInfo = [displayName, address, phone];
-          StMarksVenues.push(venueInfo);
-         });
-
+  $(document).ready(function(){
         $('.exp-contr').click(function(){
           var icon = $(this).children('i');
           if (icon.hasClass('glyphicon-chevron-down')) {
@@ -227,13 +159,12 @@
           }
           icon.toggleClass('glyphicon-chevron-down');
           icon.toggleClass('glyphicon-chevron-up');
-
-});
-  
+        });
   });
 
 
 </script>
+<script src="{{url_for('static', filename='js/data_mgr.js')}}"></script>
 <script src="{{url_for('static', filename='js/loc_switch.js')}}"></script>
 <script>
   
