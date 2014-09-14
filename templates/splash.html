@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block title %}Welcome to Scoutr!{% endblock %}
+{% block head %}
+    <style>
+      #section1 {
+        height:750px;
+        padding-top:100px;
+      }
+
+      #section1 .jumbotron {
+        margin-left:auto;
+        margin-right:auto;
+        width:70%;
+        margin-top: 250px;
+        background-color: black;
+        text-align: center;
+        box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2) inset, 0px -3px 7px rgba(0, 0, 0, 0.2) inset;
+        opacity: 0.75;
+        filter: alpha(opacity=75);
+        color: white;
+      }
+</style>
+{% endblock %}
+{% block maincontent %}
+    <div id="section1">
+      <div class="jumbotron">
+        <div class="row">
+          <h2 class="featurette-heading">Scoutr</h2>
+          <p class="lead">Find what your competitors are doing in your neighborhood.</p>
+        </div>
+        <div class="row">
+        	    <a href="#postModal" role="button" data-toggle="modal"><button type="submit" value="formurl">
+                Scout Now
+              </button></a>
+        </div>
+      </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/jquery-2.1.1.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/backstretch.js') }}"></script>
+<script>
+  // You may also attach Backstretch to a block-level element
+  $("#section1").backstretch("{{ url_for('static', filename='splashback.jpg') }}");
+</script>
+{% endblock %}
