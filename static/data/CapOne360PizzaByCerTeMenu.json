@@ -1,16 +1,4 @@
-{
-    "meta": {
-        "code": 200
-    },
-    "response": {
-        "menu": {
-            "provider": {
-                "name": "singleplatform",
-                "attributionImage": "https://as.singleplatform.com/Foursquare/felidia-ristorante/provided_by.png",
-                "attributionLink": "http://w.singlepage.com/felidia-ristorante/menu?ref=Foursquare",
-                "attributionText": "Disclaimer: Always check with the business for pricing and availability of menu items. SinglePlatform is not responsible for menu or pricing changes, but the information is believed to be accurate when posted. Listing of a menu does not mean that there is any affiliation, endorsement or sponsorship between SinglePlatform and the listed business."
-            },
-            "menus": {
+ {
                 "count": 1,
                 "items": [
                     {
@@ -401,6 +389,3 @@
                     }
                 ]
             }
-        }
-    }
-}
