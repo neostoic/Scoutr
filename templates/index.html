@@ -1,7 +1,9 @@
-{% extends 'base_inner.html' %}
+{% extends 'base.html' %}
 {% block title %}Scoutr{% endblock %}
-{% block content %}
+{% block maincontent %}
+{% include 'inner_top.html' %}
 <!-- main col left --> 
+
                          <div class="col-sm-5">
                            
                               <div class="panel panel-default">
@@ -130,4 +132,8 @@
                               </div>
                             
                           </div>
+                                   </div><!--/row-->
+        
+        {% include 'inner_bot.html' %}
+
 {% endblock %}
