@@ -8,6 +8,7 @@ $().ready(function() {
 		var zipcode = $('#inpzip').val();
 		loadVenues(zipcode);
 	});
+	loadVenues('10002');
 });
 
 function loadVenues(zipcode){

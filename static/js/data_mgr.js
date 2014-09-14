@@ -28,7 +28,7 @@ function loadData() {
             var menuInfo = [foodName, description, price, image];
             Cap360PizzaMenu.push(menuInfo);
           });
-         _.forEach(DATACap360FelidiaMenu.response.menu.menus.items[0].entries.items[0].entries.items.slice(0,5), function(data) {
+         _.forEach(DATAMeatScarpettaMenu.response.menu.menus.items[0].entries.items[0].entries.items.slice(0,5), function(data) {
             var foodName  = data.name || "";
             var price = data.price || "";
             var description = data.description || "";
