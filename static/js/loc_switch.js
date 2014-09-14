@@ -35,6 +35,7 @@ function loadVenues(zipcode){
 		venueBlock = '<div class="venue"><button class="btn btn-default exp-contr"><i class="glyphicon glyphicon-chevron-down"></i></button> <div class="venue_name">' + ven[0] + '</div> <div class="venue_address">' + ven[1] + '</div> <div class="venue_phno">'+ ven[2] +'</div> </div>';
 		$('#productBlock').append(venueBlock);
 	}
+	setVenueClick();
 }
 
 function loadMenus() {

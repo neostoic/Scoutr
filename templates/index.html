@@ -4,101 +4,108 @@
 {% include 'inner_top.html' %}
 <!-- main col left --> 
   <!-- <title>Venue/Products</title> -->
-<div class="row" style="margin-bottom:20px"> 
- <div class="col-sm-8">
-   <h2>Products and Venues</h2>  
- </div>
- <div class="col-sm-4">
-   <form class="form" id="zipform">
-      <div class="input-group text-center">
-        <input type="text" class="form-control input-lg" placeholder="New Zip Code" id="inpzip">
-          <span class="input-group-btn"><button class="btn btn-lg btn-primary" type="button" id="gosearch">OK</button></span>
-      </div>
-    </form>
+  <div class="row" style="margin-bottom:20px"> 
+   <div class="col-sm-8">
+     <h2>Products and Venues</h2>  
+   </div>
+   <div class="col-sm-4">
+     <form class="form" id="zipform">
+        <div class="input-group text-center">
+          <input type="text" class="form-control input-lg" placeholder="New Zip Code" id="inpzip">
+            <span class="input-group-btn"><button class="btn btn-lg btn-primary" type="button" id="gosearch">OK</button></span>
+        </div>
+      </form>
+    </div>
   </div>
-</div>
+ <div class="col-sm-6">
+   
+      <div class="panel panel-default">
+      
 
+        <div id="productBlock">
+          <div class="venue">
+            <button class="btn btn-default exp-contr"><i class="glyphicon glyphicon-chevron-down"></i></button>
+            <div class="venue_name">Starbucks Cafe</div>
+            <div class="venue_address">Address</div>
+            <div class="venue_phno">(212) 555-1234</div>
+            <div class="venue_prods">
+              <div class="product_head">Products</div>
+              <ul>
+                <li><span class="prod_name">Chocolate Chip Cookies</span> <span class="prod_price">($3.53)</span>
+                <li><span class="prod_name">Ice Cream</span>
+                <li><span class="prod_name">Pancakes</span>
+              </ul>
+            </div>    
+          </div>
 
-                         <div class="col-sm-6">
-                           
-                              <div class="panel panel-default">
-                              
-                        
-                                <div id="productBlock">
-                                  <div class="venue">
-                                    <button class="btn btn-default exp-contr"><i class="glyphicon glyphicon-chevron-down"></i></button>
-                                    <div class="venue_name">Starbucks Cafe</div>
-                                    <div class="venue_address">Address</div>
-                                    <div class="venue_phno">(212) 555-1234</div>
-                                    <div class="venue_prods">
-                                      <div class="product_head">Products</div>
-                                      <ul>
-                                        <li><span class="prod_name">Chocolate Chip Cookies</span> <span class="prod_price">($3.53)</span>
-                                        <li><span class="prod_name">Ice Cream</span>
-                                        <li><span class="prod_name">Pancakes</span>
-                                      </ul>
-                                    </div>    
-                                  </div>
+          <div class="venue">
+            <button class="btn btn-default exp-contr"><i class="glyphicon glyphicon-chevron-down"></i></button>
+            <div class="venue_name">Other Cafe</div>
+            <div class="venue_address">Addresss 2</div>
+            <div class="venue_phno">(212) 555-1237</div>
+            <div class="venue_prods">
+              <div class="product_head">Products</div>
+              <ul>
+                <li><span class="prod_name">Hot dog</span>
+                <li><span class="prod_name">Seollongtang</span>
+                <li><span class="prod_name">Army Stew</span>
+              </ul>
+            </div>    
+          </div>
+        </div>
+      </div>
 
-                                  <div class="venue">
-                                    <button class="btn btn-default exp-contr"><i class="glyphicon glyphicon-chevron-down"></i></button>
-                                    <div class="venue_name">Other Cafe</div>
-                                    <div class="venue_address">Addresss 2</div>
-                                    <div class="venue_phno">(212) 555-1237</div>
-                                    <div class="venue_prods">
-                                      <div class="product_head">Products</div>
-                                      <ul>
-                                        <li><span class="prod_name">Hot dog</span>
-                                        <li><span class="prod_name">Seollongtang</span>
-                                        <li><span class="prod_name">Army Stew</span>
-                                      </ul>
-                                    </div>    
-                                  </div>
-                                </div>
-                              </div>
+   
 
-                           
-                  
-                              <div class="well"> 
-                                   <form class="form-horizontal" role="form">
-                                    <h4>Scoutr, I need help with:</h4>
-                                     <div class="form-group" style="padding:14px;">
-                                      <textarea class="form-control" placeholder="Enter topic you need help with"></textarea>
-                                    </div>
-                                    <button class="btn btn-primary pull-right" type="button">Ask For Help!</button><ul class="list-inline"><li><a href=""></a><li><a href=""><i class="glyphicon glyphicon-map-marker"></i></a></li></ul>
-                                  </form>
-                              </div>
-                           
-                             
-                           		
-                           
-                          </div>
-                          
-                          <!-- main col right -->
-                          <div class="col-sm-6">
-                              
-                               <div class="panel panel-default">
-                                 <div class="panel-heading"><!-- <a href="#" class="pull-right">View all</a> --> <h4>Bootply Editor &amp; Code Library</h4></div>
-                                  <div class="panel-body">
-                                    <p><img src="//placehold.it/150x150" class="img-circle pull-right"> <a href="#">The Bootstrap Playground</a></p>
-                                    <div class="clearfix"></div>
-                                    <hr>
-                                    Design, build, test, and prototype using Bootstrap in real-time from your Web browser. Bootply combines the power of hand-coded HTML, CSS and JavaScript with the benefits of responsive design using Bootstrap. Find and showcase Bootstrap-ready snippets in the 100% free Bootply.com code repository.
-                                  </div>
-                               </div>
-                            
-                               <div class="panel panel-default">
-                                 <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>Stackoverflow</h4></div>
-                                  <div class="panel-body">
-                                  
-                                  </div>
-                               </div>
+      <div class="well"> 
+           <form class="form-horizontal" role="form">
+            <h4>Scoutr, I need help with:</h4>
+             <div class="form-group" style="padding:14px;">
+              <textarea class="form-control" placeholder="Enter topic you need help with"></textarea>
+            </div>
+            <button class="btn btn-primary pull-right" type="button">Ask For Help!</button><ul class="list-inline"><li><a href=""></a><li><a href=""><i class="glyphicon glyphicon-map-marker"></i></a></li></ul>
+          </form>
+      </div>
+   
+     
+   		
+   
+  </div>
+  
+  <!-- main col right -->
+  <div class="col-sm-6">
+      <div class="panel panel-default" id="venue-details">
+        <div class="panel-heading">
+          <!-- <a href="#" class="pull-right">View all</a> -->
+          <h4>Select a Location</h4>
+        </div>
+        <div class="panel-body">
+          <div class="location-img"></div>
+          <div class="location-address"></div>
+          <div class="location-ph"></div>
+          <div class="clearfix"></div>
+          <hr>
+          <div class="venue_prods" id="product-list">
+              <ul>
+                <li><span class="prod_name">Chocolate Chip Cookies</span> <span class="prod_price">($3.53)</span>
+                <li><span class="prod_name">Ice Cream</span>
+                <li><span class="prod_name">Pancakes</span>
+              </ul>    
+          </div>
+        </div>
+      </div>
+    
+      <div class="panel panel-default" id="watch-list">
+        <div class="panel-heading"><h4>Product Watchlist</h4></div>
+        <div class="panel-body">
+        </div>
+      </div>
 
-                              
-                            
-                            
-                          </div>
-                                   </div><!--/row-->
+      
+    
+    
+  </div>
+</div><!--/row-->
         <!-- <title>Venue/Products</title> -->
   <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
   <!-- <link href="css/styles.css" rel="stylesheet"> -->
@@ -140,7 +147,7 @@
 
 
 
-        {% include 'inner_bot.html' %}
+{% include 'inner_bot.html' %}
 
 {% endblock %}
 
@@ -165,6 +172,7 @@
 
 </script>
 <script src="{{url_for('static', filename='js/data_mgr.js')}}"></script>
+<script src="{{url_for('static', filename='js/loc_details.js')}}"></script>
 <script src="{{url_for('static', filename='js/loc_switch.js')}}"></script>
 <script>
   
