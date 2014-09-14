@@ -11,7 +11,7 @@
  <div class="col-sm-4">
    <form class="form">
       <div class="input-group text-center">
-        <input type="text" class="form-control input-lg" placeholder="Enter Another Zip Code">
+        <input type="text" class="form-control input-lg" placeholder="New Zip Code">
           <span class="input-group-btn"><button class="btn btn-lg btn-primary" type="button">OK</button></span>
       </div>
     </form>
@@ -78,7 +78,7 @@
                           <div class="col-sm-6">
                               
                                <div class="panel panel-default">
-                                 <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>Bootply Editor &amp; Code Library</h4></div>
+                                 <div class="panel-heading"><!-- <a href="#" class="pull-right">View all</a> --> <h4>Bootply Editor &amp; Code Library</h4></div>
                                   <div class="panel-body">
                                     <p><img src="//placehold.it/150x150" class="img-circle pull-right"> <a href="#">The Bootstrap Playground</a></p>
                                     <div class="clearfix"></div>
@@ -151,50 +151,57 @@
 <script type="text/javascript">
    $(document).ready(function(){
         var grp = [];
-        
-          DATA_Serfina = []
+
+        //Venues
+        Cap360Venues = []
+        MeatPackingVenues = []
+        StMarksVenues = []
+
+        //Menus
+        Cap360SerifinaMenu = []
+        Cap360PizzaMenu = []
+        Cap360FelidiaMenu = []
+
          _.forEach(DATACap360SerafinaMenu.response.menu.menus.items[0].entries.items[0].entries.items.slice(0,5), function(data) {
             var foodName  = data.name || "";
             //var price 
             //var descrip
             // console.log(foodName)
-            DATA_Serfina.push(foodName);
+            Cap360SerifinaMenu.push(foodName);
 
           });
 
          // Loop through Capital One 360 Venues
-         counter = 0;
         _.forEach(DATACap360.response.groups[0].items, function(data) {
-          counter++;
           var displayName  = data.venue.name || "";
           var address = data.venue.location.address || "";
           var lat = data.venue.location.lat || "";
           var lng = data.venue.location.lng || "";
-          // console.log(DATACap360.response.groups[0].items)
-          console.log(data.venue.name)});
-          if (counter == 0) {
-            DATA_Serifina[0]
-          }
+          var phone = data.venue.contact.formattedPhone || "";
+          var venueInfo = [displayName, address, phone];
+          Cap360Venues.push(venueInfo);
+        });
 
+          // Loop through Meat Packing Venues
         _.forEach(DATAMeatPacking.response.groups[0].items, function(data) {
-
           var displayName  = data.venue.name || "";
           var address = data.venue.location.address || "";
           var lat = data.venue.location.lat || "";
           var lng = data.venue.location.lng || "";
-          // console.log(DATACap360.response.groups[0].items)
-           //console.log(data.venue.name)
+          var phone = data.venue.contact.formattedPhone || "";
+          var venueInfo = [displayName, address, phone];
+          MeatPackingVenues.push(venueInfo);
          });
 
-
+        // Loop through St Marks Venues
         _.forEach(DATAStMarks.response.groups[0].items, function(data) {
-
           var displayName  = data.venue.name || "";
           var address = data.venue.location.address || "";
           var lat = data.venue.location.lat || "";
           var lng = data.venue.location.lng || "";
-          // console.log(DATACap360.response.groups[0].items)
-           // console.log(data.venue.name)
+          var phone = data.venue.contact.formattedPhone || "";
+          var venueInfo = [displayName, address, phone];
+          StMarksVenues.push(venueInfo);
          });
 
         $('.exp-contr').click(function(){
