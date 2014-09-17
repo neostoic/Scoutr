@@ -73,7 +73,7 @@
 
 <!--post modal-->
 <div id="postModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-  <form action="" method="POST"  role="form" id="info-form">
+  <form action="/dashboard/" method="GET" role="form" id="info-form">
   <div class="modal-dialog">
   <div class="modal-content">
       <div class="modal-header">
@@ -120,7 +120,7 @@
       </div>
       <div class="modal-footer">
           <div>
-          <button type="submit" style="background-color:#FFF9E1;color:black;" class="btn btn-primary btn-sm" data-dismiss="modal" aria-hidden="true">Scoutr</button>
+          <button id="getreport" type="submit" style="background-color:#FFF9E1;color:black;" class="btn btn-primary btn-sm" data-dismiss="modal" aria-hidden="true">Scoutr</button>
 		    </div>	
       </div>
   </div>
@@ -144,5 +144,12 @@
 		<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
     {% block scripts %}
     {% endblock %}
+    <script>
+      $(
+      $('#getreport').click(function{
+        window.location = "/dashboard";
+        });
+      );
+    </script>
 	</body>
 </html>
